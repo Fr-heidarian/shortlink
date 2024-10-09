@@ -1,4 +1,44 @@
 main {
+  .card {
+    h2 {
+    }
+
+    form {
+      .input-container {
+        input {
+        }
+
+        button {
+        }
+      }
+
+      p {
+      }
+    }
+  }
+
+  .description {
+    h2 {
+    }
+
+    p {
+    }
+  }
+}
+
+@media {
+  main {
+    .card {
+      form {
+        .input-container {
+          /*  */
+        }
+      }
+    }
+  }
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
