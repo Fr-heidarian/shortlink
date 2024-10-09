@@ -1,3 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-block: 0.5em;
+}
+
+h2 {
+  margin-block: 1em;
+}
+
 p {
+  margin-block: 1em;
   line-height: 1.5;
 }
