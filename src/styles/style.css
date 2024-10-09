@@ -20,13 +20,13 @@ main {
     font-size: 2.25rem;
   }
 
-  .row-div-mid h2,
-  .row-div-bottom h2 {
+  .row-mid h2,
+  .row-bottom h2 {
     font-size: 1.5rem;
     margin-bottom: 0;
   }
 
-  .row-div-top {
+  .row-top {
     text-align: center;
     width: 60%;
     border: 1px solid #ccc;
@@ -34,7 +34,7 @@ main {
     border-radius: 5px;
     padding: 2rem;
     box-sizing: border-box;
-    & .div-top-box {
+    & .top-box {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -45,12 +45,12 @@ main {
     }
   }
 
-  .row-div-mid {
+  .row-mid {
     padding: 0 0.5rem;
     box-sizing: border-box;
     width: 60%;
   }
-  .row-div-bottom {
+  .row-bottom {
     padding: 0 0.5rem;
     box-sizing: border-box;
     width: 60%;
@@ -87,7 +87,7 @@ main {
 }
 
 /* Footer Style */
-.footer {
+footer {
   padding: 1rem;
   width: 100%;
   background-color: #2d2b2b;
@@ -98,7 +98,7 @@ main {
   p {
     color: #ffffff;
   }
-  .nav_footer ul {
+  nav ul {
     display: flex;
     & li {
       list-style: none;
@@ -126,17 +126,17 @@ main {
     h2 {
       font-size: 1.5rem;
     }
-    .row-div-mid h2,
-    .row-div-bottom h2 {
+    .row-mid h2,
+    .row-bottom h2 {
       font-size: 1rem;
     }
 
-    .row-div-top {
+    .row-top {
       padding: 1rem;
       width: 100% !important;
       margin-bottom: 1rem;
 
-      & .div-top-box {
+      & .top-box {
         width: 100%;
         p {
           width: 100%;
@@ -144,21 +144,21 @@ main {
         }
       }
     }
-    .row-div-mid {
+    .row-mid {
       width: 99%;
     }
-    .row-div-bottom {
+    .row-bottom {
       width: 99%;
     }
     .input-container {
       width: 100%;
     }
   }
-  .footer {
+  footer {
     align-items: flex-start;
     padding: 0.25rem;
     box-sizing: border-box;
-    .nav_footer ul {
+    nav ul {
       flex-direction: column;
       padding-left: 0;
 
@@ -183,23 +183,23 @@ main {
     h2 {
       font-size: 2rem;
     }
-    .row-div-mid h2,
-    .row-div-bottom h2 {
+    .row-mid h2,
+    .row-bottom h2 {
       font-size: 1.5rem;
     }
 
-    .row-div-top {
+    .row-top {
       width: 95% !important;
       margin-bottom: 1rem;
     }
-    .row-div-mid {
+    .row-mid {
       width: 90% !important;
     }
-    .row-div-bottom {
+    .row-bottom {
       width: 90%;
     }
   }
-  .nav_footer ul {
+  nav ul {
     padding: 0;
     & a {
       padding: 0.5rem 0.35rem !important;
