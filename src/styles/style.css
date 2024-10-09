@@ -20,13 +20,12 @@ main {
     font-size: 2.25rem;
   }
 
-  .row-mid h2,
-  .row-bottom h2 {
+  .description h2 {
     font-size: 1.5rem;
     margin-bottom: 0;
   }
 
-  .row-top {
+  .card {
     text-align: center;
     width: 60%;
     border: 1px solid #ccc;
@@ -45,12 +44,7 @@ main {
     }
   }
 
-  .row-mid {
-    padding: 0 0.5rem;
-    box-sizing: border-box;
-    width: 60%;
-  }
-  .row-bottom {
+  .description {
     padding: 0 0.5rem;
     box-sizing: border-box;
     width: 60%;
@@ -126,12 +120,11 @@ footer {
     h2 {
       font-size: 1.5rem;
     }
-    .row-mid h2,
-    .row-bottom h2 {
+    .description h2 {
       font-size: 1rem;
     }
 
-    .row-top {
+    .card {
       padding: 1rem;
       width: 100% !important;
       margin-bottom: 1rem;
@@ -144,10 +137,7 @@ footer {
         }
       }
     }
-    .row-mid {
-      width: 99%;
-    }
-    .row-bottom {
+    .description {
       width: 99%;
     }
     .input-container {
@@ -183,20 +173,16 @@ footer {
     h2 {
       font-size: 2rem;
     }
-    .row-mid h2,
-    .row-bottom h2 {
+    .description h2 {
       font-size: 1.5rem;
     }
 
-    .row-top {
+    .card {
       width: 95% !important;
       margin-bottom: 1rem;
     }
-    .row-mid {
+    .description {
       width: 90% !important;
-    }
-    .row-bottom {
-      width: 90%;
     }
   }
   nav ul {
