@@ -33,7 +33,7 @@ main {
     border-radius: 5px;
     padding: 2rem;
     box-sizing: border-box;
-    & .top-box {
+     form {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -98,13 +98,13 @@ footer {
   }
   nav ul {
     display: flex;
-    & li {
+     li {
       list-style: none;
       &:not(:last-child)::after {
         content: "|";
         color: #ffffff;
       }
-      & a {
+       a {
         text-decoration: none;
         padding: 0.5rem 1rem;
         color: #ffffff;
@@ -133,7 +133,7 @@ footer {
       width: 100% !important;
       margin-bottom: 1rem;
 
-      & .top-box {
+       form {
         width: 100%;
         p {
           width: 100%;
@@ -159,7 +159,7 @@ footer {
       flex-direction: column;
       padding-left: 0;
 
-      & li {
+       li {
         &:not(:last-child)::after {
           content: "";
         }
@@ -196,7 +196,7 @@ footer {
   }
   nav ul {
     padding: 0;
-    & a {
+     a {
       padding: 0.5rem 0.35rem !important;
     }
   }
