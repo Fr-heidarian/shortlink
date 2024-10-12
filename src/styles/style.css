@@ -1,11 +1,11 @@
-.container {
+header {
   width: 90%;
   margin: 0 auto;
 }
 p {
   line-height: 1.5rem;
 }
-.row {
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@ p {
     font-size: 2.25rem;
   }
 
-  h3 {
+.row-div-mid h2,.row-div-bottom h2 {
     font-size: 1.5rem;
     margin-bottom: 0;
   }
@@ -85,7 +85,6 @@ p {
   background-color: red;
 }
 
-/* Footer Style */
 .footer {
   padding: 1rem;
   width: 100%;
@@ -115,17 +114,17 @@ p {
 }
 
 @media screen and (max-width: 640px) {
-  .container {
+ header {
     width: 99%;
   }
-  .row {
+  header {
     h1 {
       font-size: 2rem;
     }
     h2 {
       font-size: 1.5rem;
     }
-    h3 {
+    .row-div-mid h2,.row-div-bottom h2 {
       font-size: 1rem;
     }
 
@@ -171,17 +170,17 @@ p {
 
 /* Tablet Size */
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-  .container {
+  header{
     width: 90%;
   }
-  .row {
+  header {
     h1 {
       font-size: 2.75rem;
     }
     h2 {
       font-size: 2rem;
     }
-    h3 {
+  .row-div-mid h2,.row-div-bottom h2 {
       font-size: 1.5rem;
     }
 
