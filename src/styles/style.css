@@ -8,9 +8,11 @@ header {
     font-size: 3rem;
   }
 }
+
 p {
   line-height: 1.5rem;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -33,10 +35,12 @@ main {
     border-radius: 5px;
     padding: 2rem;
     box-sizing: border-box;
-     form {
+
+    form {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       p {
         width: 70%;
         text-align: justify;
@@ -44,16 +48,18 @@ main {
     }
   }
 
-  .description{
+  .description {
     padding: 0 0.5rem;
     box-sizing: border-box;
     width: 60%;
   }
+
   .row-bottom {
     padding: 0 0.5rem;
     box-sizing: border-box;
     width: 60%;
   }
+
   .input-container {
     display: flex;
     width: 70%;
@@ -93,18 +99,23 @@ footer {
   flex-direction: column;
   align-items: center;
   border-top: 3px solid blue;
+
   p {
     color: #ffffff;
   }
+
   nav ul {
     display: flex;
-     li {
+
+    li {
       list-style: none;
+
       &:not(:last-child)::after {
         content: "|";
         color: #ffffff;
       }
-       a {
+
+      a {
         text-decoration: none;
         padding: 0.5rem 1rem;
         color: #ffffff;
@@ -116,15 +127,18 @@ footer {
 @media screen and (max-width: 640px) {
   header {
     width: 99%;
+
     h1 {
       font-size: 2rem;
     }
   }
+
   main {
     h2 {
       font-size: 1.5rem;
     }
-    .description h2{
+
+    .description h2 {
       font-size: 1rem;
     }
 
@@ -133,33 +147,39 @@ footer {
       width: 100% !important;
       margin-bottom: 1rem;
 
-       form {
+      form {
         width: 100%;
+
         p {
           width: 100%;
           font-size: 1rem;
         }
       }
     }
-    .description{
+
+    .description {
       width: 99%;
     }
+
     .row-bottom {
       width: 99%;
     }
+
     .input-container {
       width: 100%;
     }
   }
+
   footer {
     align-items: flex-start;
     padding: 0.25rem;
     box-sizing: border-box;
+
     nav ul {
       flex-direction: column;
       padding-left: 0;
 
-       li {
+      li {
         &:not(:last-child)::after {
           content: "";
         }
@@ -171,15 +191,18 @@ footer {
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   header {
     width: 90%;
+
     h1 {
       font-size: 2.75rem;
     }
   }
+
   main {
     h2 {
       font-size: 2rem;
     }
-    .description h2{
+
+    .description h2 {
       font-size: 1.5rem;
     }
 
@@ -187,16 +210,19 @@ footer {
       width: 95% !important;
       margin-bottom: 1rem;
     }
-    .description{
+
+    .description {
       width: 90% !important;
     }
+
     .row-bottom {
       width: 90%;
     }
   }
   nav ul {
     padding: 0;
-     a {
+
+    a {
       padding: 0.5rem 0.35rem !important;
     }
   }
