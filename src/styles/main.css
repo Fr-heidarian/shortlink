@@ -3,28 +3,53 @@ main {
   flex-direction: column;
   align-items: center;
 
-  h2 {
-    font-size: 2.25rem;
-  }
-
-  .description h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0;
-  }
-
   .card {
     text-align: center;
     width: 60%;
-    border: 1px solid #ccc;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
+    border: 1px solid hsl(0, 0%, 80%);
+    box-shadow: hsla(0, 0%, 0%, 0.3) 0px 1px 4px;
     border-radius: 5px;
     padding: 2rem;
     box-sizing: border-box;
+
+    h2 {
+      font-size: 2.25rem;
+    }
 
     form {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      .input-container {
+        display: flex;
+        width: 70%;
+
+        input {
+          padding: 10px;
+          border: 1px solid hsl(0, 0%, 80%);
+          border-radius: 4px 0 0 4px;
+          flex-grow: 1;
+        }
+
+        input:focus {
+          outline: none;
+        }
+
+        button {
+          padding: 10px 15px;
+          border: 1px solid hsl(0, 0%, 80%);
+          border-left: none;
+          border-radius: 0 4px 4px 0;
+          background-color: hsl(240, 100%, 50%);
+          color: hsl(0, 0%, 100%);
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: hsl(0, 100%, 50%);
+        }
+      }
 
       p {
         width: 70%;
@@ -37,65 +62,33 @@ main {
     padding: 0 0.5rem;
     box-sizing: border-box;
     width: 60%;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
   }
-
-  .row-bottom {
-    padding: 0 0.5rem;
-    box-sizing: border-box;
-    width: 60%;
-  }
-
-  .input-container {
-    display: flex;
-    width: 70%;
-  }
-
-  .input-container input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    flex-grow: 1;
-  }
-
-  .input-container input:focus {
-    outline: none;
-  }
-}
-
-.input-container button {
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-left: none;
-  border-radius: 0 4px 4px 0;
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-}
-
-.input-container button:hover {
-  background-color: red;
 }
 
 @media screen and (max-width: 640px) {
   main {
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    .description h2 {
-      font-size: 1rem;
-    }
-
     .card {
       padding: 1rem;
       width: 100% !important;
       margin-bottom: 1rem;
 
+      h2 {
+        font-size: 1.5rem;
+      }
+
       form {
         width: 100%;
 
-        p {
+        .input-container {
           width: 100%;
+        }
+
+        p {
           font-size: 1rem;
         }
       }
@@ -103,46 +96,32 @@ main {
 
     .description {
       width: 99%;
-    }
 
-    .row-bottom {
-      width: 99%;
-    }
-
-    .input-container {
-      width: 100%;
+      h2 {
+        font-size: 1rem;
+      }
     }
   }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   main {
-    h2 {
-      font-size: 2rem;
-    }
-
-    .description h2 {
-      font-size: 1.5rem;
-    }
-
     .card {
       width: 95% !important;
       margin-bottom: 1rem;
+
+      h2 {
+        font-size: 2rem;
+      }
     }
 
     .description {
       width: 90% !important;
-    }
 
-    .row-bottom {
-      width: 90%;
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   }
-  nav ul {
-    padding: 0;
 
-    a {
-      padding: 0.5rem 0.35rem !important;
-    }
-  }
 }
