@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="src/styles/header.css" />
     <link rel="stylesheet" href="src/styles/main.css" />
     <link rel="stylesheet" href="src/styles/footer.css" />
+
+    <script src="src/scripts/shortener.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -27,7 +29,12 @@
         <h2>Paste the URL to be shortened</h2>
         <form>
           <div class="input-container">
-            <input type="text" placeholder="Enter the link here" />
+            <input
+              type="url"
+              autocomplete="url"
+              name="link"
+              placeholder="Enter the link here"
+            />
             <button>Shorten URL</button>
           </div>
           <p>
