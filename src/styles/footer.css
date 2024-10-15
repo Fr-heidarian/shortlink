@@ -21,7 +21,7 @@ footer {
         text-decoration: none;
         padding-block: 0.5rem;
         padding-inline: 1rem;
-        color: var(--white-color);
+        color: inherit;
       }
     }
   }
