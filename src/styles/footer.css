@@ -1,11 +1,11 @@
 footer {
   padding-block: 1rem;
   padding-inline: 1rem;
-  background-color: hsl(0, 2%, 17%);
+  background-color: var(--secondary-color);
   display: grid;
   place-items: center;
-  border-top: 3px solid hsl(240, 100%, 50%);
-  color: hsl(0, 0%, 100%);
+  border-top: 3px solid var(--primary-color);
+  color: var(--white-color);
 
   nav > ul {
     display: flex;
@@ -21,7 +21,7 @@ footer {
         text-decoration: none;
         padding-block: 0.5rem;
         padding-inline: 1rem;
-        color: hsl(0, 0%, 100%);
+        color: var(--white-color);
       }
     }
   }

@@ -6,8 +6,8 @@ main {
   .card {
     text-align: center;
     min-width: 60%;
-    border: 1px solid hsl(0, 0%, 80%);
-    box-shadow: hsla(0, 0%, 0%, 0.3) 0 1px 4px;
+    border: 1px solid var(--white-color);
+    box-shadow: var(--dark-color) 0 1px 4px;
     border-radius: 5px;
     padding-block: 2rem;
     padding-inline: 2rem;
@@ -27,28 +27,27 @@ main {
         input {
           padding-block: 1rem;
           padding-inline: 1rem;
-          border: 1px solid hsl(0, 0%, 80%);
+          border: 1px solid var(--primary-color);
           border-radius: 4px 0 0 4px;
           flex-grow: 1;
         }
 
         input:focus {
-          outline: none;
+          outline-color: var(--danger-color);
         }
 
         button {
           padding-block: 0.75rem;
           padding-inline: 1rem;
-          border: 1px solid hsl(0, 0%, 80%);
-          border-left: none;
           border-radius: 0 4px 4px 0;
-          background-color: hsl(240, 100%, 50%);
-          color: hsl(0, 0%, 100%);
+          border: 1px solid var(--primary-color);
+          background-color: var(--primary-color);
+          color: var(--white-color);
           cursor: pointer;
         }
 
         button:hover {
-          background-color: hsl(0, 100%, 50%);
+          background-color: var(--danger-color);
         }
       }
 

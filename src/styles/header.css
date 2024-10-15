@@ -1,7 +1,7 @@
 header {
   h1 {
     text-align: center;
-    color: hsl(240, 100%, 50%);
+    color: var(--primary-color);
     font-size: clamp(2rem, 5vw + 0.1rem, 3rem);
   }
 }
