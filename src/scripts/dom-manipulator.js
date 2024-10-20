@@ -1,34 +1,43 @@
-import { save } from "./storage.js";
-
 export class DomManipulator {
   shortener;
-  alias_form;
+
+  form;
+  aliasForm;
 
   constructor(shortener) {
     this.shortener = shortener;
 
-    this.alias_form = document.querySelector(
+    this.form = document.querySelector("form");
+    this.aliasForm = document.querySelector(
       "section.alias_link_generator form",
     );
   }
 
   init() {
-    this.#initAliasFormEventListeners();
+    this.#initFormsEventListeners();
     this.#displayUrl();
   }
 
-  #initAliasFormEventListeners() {
-    this.alias_form.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      const formData = new FormData(e.target);
-      const link = formData.get("link");
-      const alias = formData.get("alias");
-
-      this.shortener.aliasToOriginal.set(alias, link);
-      this.#displayUrl(this.shortener.aliasToOriginal);
-      save(this.shortener.aliasToOriginal);
+  #initFormsEventListeners() {
+    this.form.addEventListener("submit", (e) => {
+      this.#formSubmitHandler(e);
     });
+
+    this.aliasForm.addEventListener("submit", (e) => {
+      this.#formSubmitHandler(e);
+    });
+  }
+
+  #formSubmitHandler(e) {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const link = formData.get("link");
+    const alias = formData.get("alias");
+
+    this.shortener.shorten(link, alias);
+
+    this.#displayUrl();
   }
 
   #displayUrl() {
