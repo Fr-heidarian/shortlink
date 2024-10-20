@@ -1,57 +1,76 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortlink</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shortlink</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <header>
-    <div class="container">
+    <link rel="stylesheet" href="src/styles/global.css" />
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/footer.css" />
+    <link rel="stylesheet" href="src/styles/colors.css" />
 
-      <div class="row">
-        <h1>Short URL</h1>
-
-        <div class="row-div-top">
-          <h2>Paste the URL to be shortened</h2>
-          <div class="div-top-box">
-            <div class="input-container">
-              <input type="text" placeholder="Enter the link here">
-              <button type="button">Shorten URL</button>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis enim cum natus itaque
-              reiciendis
-              aliquid velit blanditiis harum perferendis. </p>
+    <script src="src/scripts/shortener.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Short URL</h1>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Paste the URL to be shortened</h2>
+        <form>
+          <div class="input-container">
+            <input
+              type="url"
+              autocomplete="url"
+              name="link"
+              placeholder="Enter the link here"
+            />
+            <button>Shorten URL</button>
           </div>
-        </div>
-
-        <div class="row-div-mid">
-          <h3>Simple and fast URL shortener!</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque officiis asperiores
-            blanditiis quae incidunt est? Omnis, delectus! Totam dignissimos harum tempore nobis nemo, sequi iusto
-            aliquam accusantium ullam vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, temporibus
-            obcaecati asperiores alias suscipit fugiat porro, ullam fuga nam aut numquam ad qui cupiditate omnis.</p>
-        </div>
-
-        <div class="row-div-bottom">
-          <h3>Shorten, share and track</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempora repellat velit laudantium
-            molestiae dignissimos iure quibusdam natus deleniti minus. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Tenetur sit est soluta hic magni adipisci ex similique reiciendis? Eos perferendis
-            aspernatur.</p>
-        </div>
-      </div>
-
-    </div>
-  </header>
-  <footer>
-    <div class="footer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            officiis enim cum natus itaque reiciendis aliquid velit blanditiis
+            harum perferendis.
+          </p>
+        </form>
+      </section>
+      <section class="description">
+        <h2>Simple and fast URL shortener!</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+          doloremque officiis asperiores blanditiis quae incidunt est? Omnis,
+          delectus! Totam dignissimos harum tempore nobis nemo, sequi iusto
+          aliquam accusantium ullam vel. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Tenetur, temporibus obcaecati asperiores alias
+          suscipit fugiat porro, ullam fuga nam aut numquam ad qui cupiditate
+          omnis.
+        </p>
+      </section>
+      <section class="description">
+        <h2>Shorten, share and track</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          tempora repellat velit laudantium molestiae dignissimos iure quibusdam
+          natus deleniti minus. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Tenetur sit est soluta hic magni adipisci ex
+          similique reiciendis? Eos perferendis aspernatur.
+        </p>
+      </section>
+    </main>
+    <footer>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-      <nav class="nav_footer">
+      <nav>
         <ul>
           <li><a href="#">ShortURL</a></li>
           <li><a href="#">URL Click Counter</a></li>
@@ -62,8 +81,6 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

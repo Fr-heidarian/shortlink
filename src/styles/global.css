@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+html {
+  font-family: "Inter", system-ui;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+  font-family: inherit;
+}
+
+h1 {
+  margin-block: 0.5rem;
+}
+
+h2 {
+  margin-block: 1rem;
+}
+
+p {
+  margin-block: 1rem;
+  line-height: 1.5;
+}
