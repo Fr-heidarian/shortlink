@@ -2,7 +2,6 @@ import { v4 as uuid } from "uuid";
 import { load, save } from "./storage.js";
 
 const form = document.querySelector("form");
-
 const aliasToOriginal = load();
 
 form.addEventListener("submit", (e) => {
@@ -22,14 +21,9 @@ form.addEventListener("submit", (e) => {
 // Alias link generator starts
 
 const alias_form = document.querySelector("#alias_link_form");
-// const aliasInput = document.getElementById("alias_input");
-// const linkInput = document.getElementById("link_input");
 
 alias_form.addEventListener("submit", (e) => {
   e.preventDefault();
-  // const alias = aliasInput.value.trim();
-  // const link = linkInput.value.trim();
-
   const formData = new FormData(e.target);
   const link = formData.get("link");
   const alias = formData.get("alias");
