@@ -27,13 +27,13 @@ main {
         input {
           padding-block: 1rem;
           padding-inline: 1rem;
-          border: 1px solid var(--primary-color);
+          border: 1px solid var(--mute-color);
           border-radius: 4px 0 0 4px;
           flex-grow: 1;
         }
 
         input:focus-visible {
-          outline-color: var(--danger-color);
+          outline-color: var(--primary-hover-color);
         }
 
         button {
@@ -47,7 +47,7 @@ main {
 
         button:hover,
         button:focus {
-          background-color: var(--danger-color);
+          background-color: var(--primary-hover-color);
         }
         button:focus-visible {
           outline: none;
@@ -102,12 +102,12 @@ main {
             width: 100%;
             padding-block: 0.75rem;
             padding-inline: 1rem;
-            border: 1px solid var(--primary-color);
+            border: 1px solid var(--mute-color);
             border-radius: 4px;
           }
 
           input:focus-visible {
-            outline-color: var(--danger-color);
+            outline-color: var(--primary-hover-color);
           }
         }
 
@@ -123,7 +123,7 @@ main {
 
         button:hover,
         button:focus {
-          background-color: var(--danger-color);
+          background-color: var(--primary-hover-color);
         }
 
         button:focus-visible {
@@ -167,11 +167,11 @@ main {
             padding-block: 1rem;
             padding-inline: 1rem;
             border-radius: 4px;
-            border: 1px solid var(--primary-color);
+            border: 1px solid var(--mute-color);
           }
 
           input:focus-visible {
-            outline-color: var(--danger-color);
+            outline-color: var(--primary-hover-color);
           }
 
           label {
