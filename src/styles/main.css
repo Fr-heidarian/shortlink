@@ -4,7 +4,6 @@ main {
   align-items: center;
 
   .card {
-    text-align: center;
     min-width: 60%;
     border: 1px solid var(--white-color);
     box-shadow: var(--dark-color) 0 1px 4px;
@@ -13,6 +12,7 @@ main {
 
     h2 {
       font-size: 2.25rem;
+      text-align: center;
     }
 
     form {
@@ -48,7 +48,7 @@ main {
         }
         button:focus-visible {
           outline: none;
-          font-weight: bold;
+          font-weight: 700;
         }
       }
 
@@ -101,7 +101,6 @@ main {
           }
 
           label {
-            text-align: start;
             margin: 1rem;
           }
         }
