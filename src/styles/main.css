@@ -9,8 +9,7 @@ main {
     border: 1px solid var(--white-color);
     box-shadow: var(--dark-color) 0 1px 4px;
     border-radius: 5px;
-    padding-block: 2rem;
-    padding-inline: 2rem;
+    padding: 2rem;
 
     h2 {
       font-size: 2.25rem;
@@ -25,8 +24,7 @@ main {
         width: 70%;
 
         input {
-          padding-block: 1rem;
-          padding-inline: 1rem;
+          padding: 1rem;
           border: 1px solid var(--mute-color);
           border-radius: 4px 0 0 4px;
           flex-grow: 1;
@@ -37,8 +35,7 @@ main {
         }
 
         button {
-          padding-block: 0.75rem;
-          padding-inline: 1rem;
+          padding: 0.75rem 1rem;
           border-radius: 0 4px 4px 0;
           background-color: var(--primary-color);
           color: var(--white-color);
@@ -76,9 +73,8 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-block: 1rem;
-    padding-block: 1rem;
-    padding-inline: 1rem;
+    margin: 1rem;
+    padding: 1rem;
 
     .card {
       min-width: 60%;
@@ -100,8 +96,7 @@ main {
 
           input {
             width: 100%;
-            padding-block: 0.75rem;
-            padding-inline: 1rem;
+            padding: 0.75rem 1rem;
             border: 1px solid var(--mute-color);
             border-radius: 4px;
           }
@@ -112,8 +107,7 @@ main {
         }
 
         button {
-          padding-block: 0.75rem;
-          padding-inline: 1.5rem;
+          padding: 0.75rem 1.5rem;
           background-color: var(--primary-color);
           color: var(--white-color);
           border: none;
@@ -148,9 +142,8 @@ main {
       border: 1px solid var(--white-color);
       box-shadow: var(--dark-color) 0 1px 4px;
       border-radius: 5px;
-      padding-block: 2rem;
-      padding-inline: 2rem;
-      margin-block: 1rem;
+      padding: 2rem;
+      margin: 1rem;
 
       form {
         display: flex;
@@ -164,8 +157,7 @@ main {
           flex-grow: 7;
 
           input {
-            padding-block: 1rem;
-            padding-inline: 1rem;
+            padding: 1rem;
             border-radius: 4px;
             border: 1px solid var(--mute-color);
           }
@@ -176,7 +168,7 @@ main {
 
           label {
             text-align: start;
-            margin-block: 1rem;
+            margin: 1rem;
           }
         }
         .controlButtons {
@@ -185,8 +177,7 @@ main {
           flex-grow: 1;
 
           button {
-            padding-block: 0.75rem;
-            padding-inline: 2rem;
+            padding: 0.75rem 2rem;
             border-radius: 4px;
             cursor: pointer;
           }
@@ -259,8 +250,7 @@ main {
 @media screen and (max-width: 640px) {
   main {
     .card {
-      padding-block: 1rem;
-      padding-inline: 2rem;
+      padding: 1rem 2rem;
 
       h2 {
         font-size: 1.5rem;
