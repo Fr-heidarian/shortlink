@@ -140,7 +140,7 @@ main {
     }
   }
 
-  .display-urls {
+  .urls {
     margin-block: 4rem;
     min-width: 60%;
 
@@ -289,7 +289,7 @@ main {
 
     .alias-link-generator {
     }
-    .display-urls {
+    .urls {
       form {
         .controlButtons {
           display: flex;
