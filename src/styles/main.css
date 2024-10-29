@@ -71,7 +71,7 @@ main {
     }
   }
 
-  .alias_link_generator {
+  .alias-link-generator {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +140,7 @@ main {
     }
   }
 
-  .display_urls {
+  .display-urls {
     margin-block: 4rem;
     min-width: 60%;
 
@@ -249,7 +249,7 @@ main {
       }
     }
 
-    .alias_link_generator {
+    .alias-lin-generator {
       display: grid;
       place-items: center;
     }
@@ -287,9 +287,9 @@ main {
       }
     }
 
-    .alias_link_generator {
+    .alias-link-generator {
     }
-    .display_urls {
+    .display-urls {
       form {
         .controlButtons {
           display: flex;

@@ -1,6 +1,5 @@
 export class DomManipulator {
   shortener;
-
   form;
   aliasForm;
 
@@ -9,7 +8,7 @@ export class DomManipulator {
 
     this.form = document.querySelector("form");
     this.aliasForm = document.querySelector(
-      "section.alias_link_generator form",
+      "section.alias-link-generator form",
     );
   }
 
@@ -41,21 +40,21 @@ export class DomManipulator {
   }
 
   #displayUrl() {
-    const display_urls = document.getElementById("display_urls");
-    display_urls.innerHTML = "";
+    const displayUrls = document.getElementById("display-urls");
+    displayUrls.innerHTML = "";
 
     this.shortener.aliasToOriginal.forEach((link, alias) => {
       const formHTML = `
         <div class="card" id="displayUrlCard"> 
-        <form id="display_url_form">
+        <form id="display-url-form">
             <div class="form-group">
                 <input
                     type="text"
-                    id="alias_display"
+                    id="alias-display"
                     name="alias"
                    value="${alias}"
                 />
-                <label for="link_display">${link}</label>
+                <label for="link-display">${link}</label>
             </div> 
             <div class="controlButtons">
                 <button type="button" class="confirm">Confirm</button>
@@ -65,7 +64,7 @@ export class DomManipulator {
         </form>
         </div>
     `;
-      display_urls.innerHTML += formHTML;
+      displayUrls.innerHTML += formHTML;
     });
   }
 }

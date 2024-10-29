@@ -41,8 +41,7 @@ footer {
 @media screen and (max-width: 640px) {
   footer {
     align-items: flex-start;
-    padding-block: 0.25rem;
-    padding-inline: 0.25rem;
+    padding: 0.25rem;
 
     nav > ul {
       flex-direction: column;
