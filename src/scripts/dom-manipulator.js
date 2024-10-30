@@ -56,7 +56,7 @@ export class DomManipulator {
                 />
                 <label for="link-display">${link}</label>
             </div> 
-            <div class="controlButtons">
+            <div class="control-buttons">
                 <button type="button" class="confirm">Confirm</button>
                 <button type="button" class="copy">Copy</button>
                 <button type="button" class="delete">Delete</button>
