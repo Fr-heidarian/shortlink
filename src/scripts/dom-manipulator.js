@@ -45,12 +45,11 @@ export class DomManipulator {
 
     this.shortener.aliasToOriginal.forEach((link, alias) => {
       const formHTML = `
-        <div class="card" id="displayUrlCard"> 
-        <form id="display-url-form">
+        <div class="card"> 
+        <form>
             <div class="form-group">
                 <input
                     type="text"
-                    id="alias-display"
                     name="alias"
                    value="${alias}"
                 />
