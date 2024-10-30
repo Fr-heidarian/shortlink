@@ -53,7 +53,7 @@ export class DomManipulator {
                     name="alias"
                    value="${alias}"
                 />
-                <label for="link-display">${link}</label>
+                <label>${link}</label>
             </div> 
             <div class="control-buttons">
                 <button type="button" class="confirm">Confirm</button>
