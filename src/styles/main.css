@@ -4,16 +4,15 @@ main {
   align-items: center;
 
   .card {
-    text-align: center;
     min-width: 60%;
     border: 1px solid var(--white-color);
     box-shadow: var(--dark-color) 0 1px 4px;
     border-radius: 5px;
-    padding-block: 2rem;
-    padding-inline: 2rem;
+    padding: 2rem;
 
     h2 {
       font-size: 2.25rem;
+      text-align: center;
     }
 
     form {
@@ -25,22 +24,19 @@ main {
         width: 70%;
 
         input {
-          padding-block: 1rem;
-          padding-inline: 1rem;
-          border: 1px solid var(--primary-color);
+          padding: 1rem;
+          border: 1px solid var(--mute-color);
           border-radius: 4px 0 0 4px;
           flex-grow: 1;
         }
 
         input:focus-visible {
-          outline-color: var(--danger-color);
+          outline-color: var(--primary-hover-color);
         }
 
         button {
-          padding-block: 0.75rem;
-          padding-inline: 1rem;
+          padding: 0.75rem 1rem;
           border-radius: 0 4px 4px 0;
-          border: 1px solid var(--primary-color);
           background-color: var(--primary-color);
           color: var(--white-color);
           cursor: pointer;
@@ -48,12 +44,11 @@ main {
 
         button:hover,
         button:focus {
-          background-color: var(--danger-color);
+          background-color: var(--primary-hover-color);
         }
         button:focus-visible {
-          border: 1px solid var(--primary-color);
           outline: none;
-          font-weight: bold;
+          font-weight: 700;
         }
       }
 
@@ -72,13 +67,123 @@ main {
       font-size: 1.5rem;
     }
   }
+
+  .urls {
+    margin-block: 4rem;
+    min-width: 60%;
+
+    .card {
+      border: 1px solid var(--white-color);
+      box-shadow: var(--dark-color) 0 1px 4px;
+      border-radius: 5px;
+      padding: 2rem;
+      margin: 1rem;
+
+      form {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 1rem;
+
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+
+          input {
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid var(--mute-color);
+          }
+
+          input:focus-visible {
+            outline-color: var(--primary-hover-color);
+          }
+
+          label {
+            margin: 1rem;
+          }
+        }
+        .control-buttons {
+          display: flex;
+          justify-content: space-around;
+          gap: 0.25rem;
+
+          button {
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          .confirm {
+            border: 3px solid var(--success-color);
+            color: var(--success-color);
+            font-weight: 500;
+            font-size: 1rem;
+
+            &:hover {
+              background-color: var(--success-color);
+              color: var(--white-color);
+            }
+          }
+
+          .copy {
+            border: 3px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 1rem;
+
+            &:hover {
+              background-color: var(--primary-color);
+              color: var(--white-color);
+            }
+          }
+
+          .delete {
+            border: 3px solid var(--danger-color);
+            color: var(--danger-color);
+            font-weight: 500;
+            font-size: 1rem;
+
+            &:hover {
+              background-color: var(--danger-color);
+              color: var(--white-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  main {
+    .card {
+      margin-block-end: 1rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .description {
+      min-width: 65%;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .alias-lin-generator {
+      display: grid;
+      place-items: center;
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
   main {
     .card {
-      padding-block: 1rem;
-      padding-inline: 2rem;
+      padding: 1rem 2rem;
 
       h2 {
         font-size: 1.5rem;
@@ -104,24 +209,14 @@ main {
         font-size: 1rem;
       }
     }
-  }
-}
 
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  main {
-    .card {
-      margin-block-end: 1rem;
-
-      h2 {
-        font-size: 2rem;
-      }
-    }
-
-    .description {
-      min-width: 65%;
-
-      h2 {
-        font-size: 1.5rem;
+    .urls {
+      form {
+        .controlButtons {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+        }
       }
     }
   }

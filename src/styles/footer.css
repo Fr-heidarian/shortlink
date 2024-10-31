@@ -27,11 +27,21 @@ footer {
   }
 }
 
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  nav > ul {
+    > li {
+      a {
+        padding-block: 0.5rem;
+        padding-inline: 0.35rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 640px) {
   footer {
     align-items: flex-start;
-    padding-block: 0.25rem;
-    padding-inline: 0.25rem;
+    padding: 0.25rem;
 
     nav > ul {
       flex-direction: column;
@@ -40,17 +50,6 @@ footer {
         &:not(:last-child)::after {
           content: "";
         }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  nav > ul {
-    > li {
-      a {
-        padding-block: 0.5rem;
-        padding-inline: 0.35rem;
       }
     }
   }

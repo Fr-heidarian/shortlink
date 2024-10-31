@@ -1,20 +1,21 @@
 import { v4 as uuid } from "uuid";
 import { load, save } from "./storage.js";
 
-const form = document.querySelector("form");
+export class Shortener {
+  aliasToOriginal;
 
-const aliasToOriginal = load();
+  constructor() {
+    this.aliasToOriginal = load();
+  }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const formData = new FormData(e.target);
-  const link = formData.get("link");
+  init() {}
 
-  const alias = uuid().substring(0, 8);
+  shorten(original, alias) {
+    if (!alias) {
+      alias = uuid().substring(0, 8);
+    }
 
-  console.log(alias, link);
-
-  aliasToOriginal.set(alias, link);
-
-  save(aliasToOriginal);
-});
+    this.aliasToOriginal.set(alias, original);
+    save(this.aliasToOriginal);
+  }
+}

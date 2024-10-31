@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="src/styles/main.css" />
     <link rel="stylesheet" href="src/styles/footer.css" />
     <link rel="stylesheet" href="src/styles/colors.css" />
+    <link rel="stylesheet" href="src/styles/alias-url.css" />
 
-    <script src="src/scripts/shortener.js" type="module"></script>
+    <script src="src/scripts/main.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -31,6 +32,7 @@
         <form>
           <div class="input-container">
             <input
+              id="url-input"
               type="url"
               autocomplete="url"
               name="link"
@@ -67,6 +69,33 @@
           similique reiciendis? Eos perferendis aspernatur.
         </p>
       </section>
+
+      <section class="alias-link-generator">
+        <div class="card">
+          <form>
+            <div class="form-group">
+              <label>Alias</label>
+              <input type="text" name="alias" />
+            </div>
+            <div class="form-group">
+              <label>Link</label>
+              <input type="url" name="link" />
+            </div>
+            <button>Generate</button>
+          </form>
+        </div>
+        <div class="card">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            corporis dolorem est, eveniet, exercitationem ipsa ipsum laborum
+            magni nam nesciunt nobis, optio reprehenderit rerum similique
+            tenetur unde veritatis. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Reiciendis, ullam.
+          </p>
+        </div>
+      </section>
+      <section class="urls" id="display-urls"></section>
     </main>
     <footer>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
