@@ -1,69 +1,47 @@
 export class DomManipulator {
   shortener;
-  form;
-  aliasForm;
 
   constructor(shortener) {
     this.shortener = shortener;
-
-    this.form = document.querySelector("form");
-    this.aliasForm = document.querySelector(
-      "section.alias-link-generator form",
-    );
   }
 
   init() {
-    this.#initFormsEventListeners();
-    this.#displayUrl();
+    this.#renderUrlList();
   }
 
-  #initFormsEventListeners() {
-    this.form.addEventListener("submit", (e) => {
-      this.#formSubmitHandler(e);
-    });
-
-    this.aliasForm.addEventListener("submit", (e) => {
-      this.#formSubmitHandler(e);
-    });
+  update() {
+    this.#renderUrlList();
   }
 
-  #formSubmitHandler(e) {
-    e.preventDefault();
-
-    const formData = new FormData(e.target);
-    const link = formData.get("link");
-    const alias = formData.get("alias");
-
-    this.shortener.shorten(link, alias);
-
-    this.#displayUrl();
+  #renderUrl(link, alias) {
+    return `
+    <div class="card">
+      <form>
+        <div class="form-group">
+          <input
+            type="text"
+            name="alias"
+            value="${alias}"
+          />
+          <label>${link}</label>
+        </div>
+        <div class="control-buttons">
+          <button type="button" class="confirm">Confirm</button>
+          <button type="button" class="copy">Copy</button>
+          <button type="button" class="delete">Delete</button>
+        </div>
+      </form>
+    </div>
+  `;
   }
 
-  #displayUrl() {
-    const displayUrls = document.getElementById("display-urls");
-    displayUrls.innerHTML = "";
+  #renderUrlList() {
+    const urlList = document.getElementById("display-urls");
+    urlList.innerHTML = "";
 
     this.shortener.aliasToOriginal.forEach((link, alias) => {
-      const formHTML = `
-        <div class="card"> 
-        <form>
-            <div class="form-group">
-                <input
-                    type="text"
-                    name="alias"
-                   value="${alias}"
-                />
-                <label>${link}</label>
-            </div> 
-            <div class="control-buttons">
-                <button type="button" class="confirm">Confirm</button>
-                <button type="button" class="copy">Copy</button>
-                <button type="button" class="delete">Delete</button>
-            </div>           
-        </form>
-        </div>
-    `;
-      displayUrls.innerHTML += formHTML;
+      const urlCard = this.#renderUrl(link, alias);
+      urlList.innerHTML += urlCard;
     });
   }
 }
