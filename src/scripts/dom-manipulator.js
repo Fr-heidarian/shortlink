@@ -6,11 +6,11 @@ export class DomManipulator {
   }
 
   init() {
-    this.#displayUrl();
+    this.#renderUrlList();
   }
 
   update() {
-    this.#displayUrl();
+    this.#renderUrlList();
   }
 
   #generateUrlCard(link, alias) {
@@ -35,13 +35,13 @@ export class DomManipulator {
   `;
   }
 
-  #displayUrl() {
-    const displayUrls = document.getElementById("display-urls");
-    displayUrls.innerHTML = "";
+  #renderUrlList() {
+    const renderUrlLists = document.getElementById("display-urls");
+    renderUrlLists.innerHTML = "";
 
     this.shortener.aliasToOriginal.forEach((link, alias) => {
       const urlCard = this.#generateUrlCard(link, alias);
-      displayUrls.innerHTML += urlCard;
+      renderUrlLists.innerHTML += urlCard;
     });
   }
 }
