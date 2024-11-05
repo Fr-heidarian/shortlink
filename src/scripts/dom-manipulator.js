@@ -13,7 +13,7 @@ export class DomManipulator {
     this.#renderUrlList();
   }
 
-  #generateUrlCard(link, alias) {
+  #renderUrl(link, alias) {
     return `
     <div class="card">
       <form>
@@ -40,7 +40,7 @@ export class DomManipulator {
     renderUrlLists.innerHTML = "";
 
     this.shortener.aliasToOriginal.forEach((link, alias) => {
-      const urlCard = this.#generateUrlCard(link, alias);
+      const urlCard = this.#renderUrl(link, alias);
       renderUrlLists.innerHTML += urlCard;
     });
   }
