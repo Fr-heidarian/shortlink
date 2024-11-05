@@ -16,6 +16,7 @@ export class Forms {
   init() {
     this.#initFormsEventListeners();
   }
+
   #initFormsEventListeners() {
     this.form.addEventListener("submit", (e) => {
       this.#formSubmitHandler(e);
@@ -25,6 +26,7 @@ export class Forms {
       this.#formSubmitHandler(e);
     });
   }
+
   #formSubmitHandler(e) {
     e.preventDefault();
 
