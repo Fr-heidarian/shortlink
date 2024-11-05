@@ -9,6 +9,10 @@ export class DomManipulator {
     this.#displayUrl();
   }
 
+  update() {
+    this.#displayUrl();
+  }
+
   #generateUrlCard(link, alias) {
     return `
     <div class="card">

@@ -35,6 +35,6 @@ export class Forms {
     const alias = formData.get("alias");
 
     this.shortener.shorten(link, alias);
-    this.domManipulator.init();
+    this.domManipulator.update();
   }
 }
