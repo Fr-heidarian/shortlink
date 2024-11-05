@@ -36,12 +36,12 @@ export class DomManipulator {
   }
 
   #renderUrlList() {
-    const renderUrlLists = document.getElementById("display-urls");
-    renderUrlLists.innerHTML = "";
+    const urlList = document.getElementById("display-urls");
+    urlList.innerHTML = "";
 
     this.shortener.aliasToOriginal.forEach((link, alias) => {
       const urlCard = this.#renderUrl(link, alias);
-      renderUrlLists.innerHTML += urlCard;
+      urlList.innerHTML += urlCard;
     });
   }
 }
