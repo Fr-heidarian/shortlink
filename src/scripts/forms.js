@@ -7,7 +7,7 @@ export class Forms {
   constructor(shortener, domManipulator) {
     this.shortener = shortener;
     this.domManipulator = domManipulator;
-    this.form = document.querySelector("form");
+    this.form = document.querySelector("section.card form");
     this.aliasForm = document.querySelector(
       "section.alias-link-generator form",
     );
