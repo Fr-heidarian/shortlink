@@ -1,7 +1,6 @@
 section#history {
   .urls {
     margin-block: 4rem;
-    min-width: 60%;
 
     .card {
       border: 1px solid var(--white-color);

@@ -41,6 +41,9 @@ h2 {
 }
 
 p {
+  max-width: 75ch;
+
   margin-block: 1rem;
+
   line-height: 1.5;
 }
