@@ -1,74 +1,8 @@
 .card {
-  border: 1px solid var(--white-color);
   box-shadow: var(--dark-color) 0 1px 4px;
+
+  border: 1px solid var(--white-color);
   border-radius: 5px;
+
   padding: 2rem;
-
-  h2 {
-    font-size: 2.25rem;
-    text-align: center;
-  }
-
-  form {
-    display: grid;
-    place-items: center;
-
-    .input-container {
-      display: flex;
-
-      input {
-        padding: 1rem;
-        border: 1px solid var(--border-color);
-        border-radius: 4px 0 0 4px;
-        flex-grow: 1;
-      }
-
-      input:focus-visible {
-        outline-color: var(--primary-hover-color);
-      }
-
-      button {
-        padding: 0.75rem 1rem;
-        border-radius: 0 4px 4px 0;
-        background-color: var(--primary-color);
-        color: var(--white-color);
-        cursor: pointer;
-      }
-
-      button:hover,
-      button:focus {
-        background-color: var(--primary-hover-color);
-      }
-      button:focus-visible {
-        outline: none;
-        font-weight: 700;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  .card {
-    margin-block-end: 1rem;
-
-    h2 {
-      font-size: 2rem;
-    }
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .card {
-    padding: 1rem 2rem;
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    form {
-      p {
-        font-size: 1rem;
-      }
-    }
-  }
 }
