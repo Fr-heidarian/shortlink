@@ -1,7 +1,7 @@
 footer {
   padding-block: 1rem;
   padding-inline: 1rem;
-  background-color: var(--secondary-color);
+  background-color: var(--footer-background-color);
   display: grid;
   place-items: center;
   border-top: 3px solid var(--primary-color);

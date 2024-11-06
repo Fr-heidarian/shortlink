@@ -24,7 +24,7 @@ section#history {
           input {
             padding: 1rem;
             border-radius: 4px;
-            border: 1px solid var(--mute-color);
+            border: 1px solid var(--border-color);
           }
 
           input:focus-visible {

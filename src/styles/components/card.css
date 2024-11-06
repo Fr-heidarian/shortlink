@@ -20,7 +20,7 @@
 
       input {
         padding: 1rem;
-        border: 1px solid var(--mute-color);
+        border: 1px solid var(--border-color);
         border-radius: 4px 0 0 4px;
         flex-grow: 1;
       }
