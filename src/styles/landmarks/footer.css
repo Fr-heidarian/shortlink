@@ -3,39 +3,41 @@ footer {
   color: var(--white-color);
 
   display: grid;
-  place-items: center;
 
   padding: 1rem;
 
   border-top: 3px solid var(--primary-color);
 
   nav > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    gap: 0.5rem;
 
     > li {
       flex-shrink: 0;
 
       list-style: none;
 
-      &:not(:last-child)::after {
-        content: "|";
-      }
-
       a {
         color: inherit;
-
-        padding: 0.5rem 1rem;
-
-        text-decoration: none;
       }
     }
   }
 }
 
-@media screen and (max-width: 640px) {
+@media (min-width: 1000px) {
   footer {
-    padding: 0.25rem;
+    justify-items: center;
+
+    nav > ul {
+      display: flex;
+
+      > li {
+        &:not(:last-child)::after {
+          content: "|";
+
+          margin-inline-start: 0.5rem;
+        }
+      }
+    }
   }
 }
