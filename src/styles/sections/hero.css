@@ -1,6 +1,7 @@
 section#hero {
   .card {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
 
     h2 {
@@ -10,12 +11,13 @@ section#hero {
 
     form {
       .input-container {
-        display: flex;
+        display: grid;
+        gap: 0.5rem;
 
         input {
           padding: 1rem;
           border: 1px solid var(--border-color);
-          border-radius: 4px 0 0 4px;
+          border-radius: 4px;
           flex-grow: 1;
 
           &:focus-visible {
@@ -25,7 +27,7 @@ section#hero {
 
         button {
           padding: 0.75rem 1rem;
-          border-radius: 0 4px 4px 0;
+          border-radius: 4px;
           background-color: var(--primary-color);
           color: var(--white-color);
           cursor: pointer;
@@ -38,6 +40,29 @@ section#hero {
           &:focus-visible {
             outline: none;
             font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  section#hero {
+    .card {
+      form {
+        .input-container {
+          grid-template-columns: 1fr auto;
+          gap: 0;
+
+          input {
+            border-start-end-radius: 0;
+            border-end-end-radius: 0;
+          }
+
+          button {
+            border-start-start-radius: 0;
+            border-end-start-radius: 0;
           }
         }
       }
