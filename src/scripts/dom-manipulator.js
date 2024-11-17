@@ -13,6 +13,16 @@ export class DomManipulator {
     this.#renderUrlList();
   }
 
+  #renderUrlList() {
+    const urlList = document.querySelector("section#history .urls");
+    urlList.innerHTML = "";
+
+    this.shortener.aliasToOriginal.forEach((link, alias) => {
+      const urlCard = this.#renderUrl(link, alias);
+      urlList.innerHTML += urlCard;
+    });
+  }
+
   #renderUrl(link, alias) {
     return `
     <div class="card">
@@ -31,15 +41,5 @@ export class DomManipulator {
       </form>
     </div>
   `;
-  }
-
-  #renderUrlList() {
-    const urlList = document.querySelector("section#history .urls");
-    urlList.innerHTML = "";
-
-    this.shortener.aliasToOriginal.forEach((link, alias) => {
-      const urlCard = this.#renderUrl(link, alias);
-      urlList.innerHTML += urlCard;
-    });
   }
 }

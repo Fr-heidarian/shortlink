@@ -1,13 +1,15 @@
 export class Forms {
   shortener;
   domManipulator;
-  form;
+
+  heroForm;
   aliasForm;
 
   constructor(shortener, domManipulator) {
     this.shortener = shortener;
     this.domManipulator = domManipulator;
-    this.form = document.querySelector("section#hero form");
+
+    this.heroForm = document.querySelector("section#hero form");
     this.aliasForm = document.querySelector("section#generator form");
   }
 
@@ -16,7 +18,7 @@ export class Forms {
   }
 
   #initFormsEventListeners() {
-    this.form.addEventListener("submit", (e) => {
+    this.heroForm.addEventListener("submit", (e) => {
       this.#formSubmitHandler(e);
     });
 

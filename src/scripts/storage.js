@@ -1,9 +1,9 @@
 export function load() {
   const links = localStorage.getItem("links");
-
   if (!links) {
     return new Map();
   }
+
   const parsedLinks = JSON.parse(links);
 
   return new Map(Object.entries(parsedLinks));
