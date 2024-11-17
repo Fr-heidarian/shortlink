@@ -8,10 +8,7 @@ section#history {
     .card {
       form {
         display: grid;
-        grid-template-areas:
-          "input buttons"
-          "link link";
-        grid-template-columns: 1fr auto;
+        grid-template-areas: "link" "input" "buttons";
         gap: 1rem;
 
         input {
@@ -64,6 +61,21 @@ section#history {
 
         .link {
           grid-area: link;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  section#history {
+    .urls {
+      .card {
+        form {
+          grid-template-areas:
+            "input buttons"
+            "link link";
+          grid-template-columns: 1fr auto;
         }
       }
     }
