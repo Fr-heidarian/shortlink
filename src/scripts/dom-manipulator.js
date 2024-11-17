@@ -17,19 +17,17 @@ export class DomManipulator {
     return `
     <div class="card">
       <form>
-        <div class="form-group">
-          <input
-            type="text"
-            name="alias"
-            value="${alias}"
-          />
-          <label>${link}</label>
-        </div>
+        <input
+          type="text"
+          name="alias"
+          value="${alias}"
+        />
         <div class="control-buttons">
           <button type="button" class="confirm">Confirm</button>
           <button type="button" class="copy">Copy</button>
           <button type="button" class="delete">Delete</button>
         </div>
+        <div class="link">${link}</div>
       </form>
     </div>
   `;

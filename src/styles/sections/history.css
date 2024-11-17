@@ -1,84 +1,69 @@
 section#history {
+  margin-block: 4rem;
+
   .urls {
-    margin-block: 4rem;
+    display: grid;
+    gap: 1rem;
 
     .card {
-      border: 1px solid var(--white-color);
-      box-shadow: var(--dark-color) 0 1px 4px;
-      border-radius: 5px;
-      padding: 2rem;
-      margin: 1rem;
-
       form {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
+        display: grid;
+        grid-template-areas:
+          "input buttons"
+          "link link";
+        grid-template-columns: 1fr auto;
         gap: 1rem;
 
-        .form-group {
-          display: flex;
-          flex-direction: column;
-          flex-grow: 1;
+        input {
+          grid-area: input;
 
-          input {
-            padding: 1rem;
-            border-radius: 4px;
-            border: 1px solid var(--border-color);
-          }
+          padding: 1rem;
+          border-radius: 4px;
+          border: 1px solid var(--border-color);
 
-          input:focus-visible {
+          &:focus-visible {
             outline-color: var(--primary-hover-color);
           }
-
-          label {
-            margin: 1rem;
-          }
         }
+
         .control-buttons {
+          grid-area: buttons;
+
           display: flex;
-          justify-content: space-around;
           gap: 0.25rem;
 
           button {
             padding: 0.75rem 2rem;
             border-radius: 4px;
             cursor: pointer;
-          }
-          .confirm {
-            border: 3px solid var(--success-color);
-            color: var(--success-color);
+
             font-weight: 500;
             font-size: 1rem;
 
-            &:hover {
-              background-color: var(--success-color);
-              color: var(--white-color);
-            }
-          }
-
-          .copy {
-            border: 3px solid var(--primary-color);
-            color: var(--primary-color);
-            font-weight: 500;
-            font-size: 1rem;
+            border: 3px solid var(--color);
+            color: var(--color);
 
             &:hover {
-              background-color: var(--primary-color);
+              background-color: var(--color);
               color: var(--white-color);
             }
-          }
 
-          .delete {
-            border: 3px solid var(--danger-color);
-            color: var(--danger-color);
-            font-weight: 500;
-            font-size: 1rem;
+            &.confirm {
+              --color: var(--success-color);
+            }
 
-            &:hover {
-              background-color: var(--danger-color);
-              color: var(--white-color);
+            &.copy {
+              --color: var(--primary-color);
+            }
+
+            &.delete {
+              --color: var(--danger-color);
             }
           }
+        }
+
+        .link {
+          grid-area: link;
         }
       }
     }
