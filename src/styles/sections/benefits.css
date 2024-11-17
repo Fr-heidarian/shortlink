@@ -1,0 +1,10 @@
+section#benefits {
+  .description {
+    margin: auto;
+    padding-inline: 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -36,7 +36,7 @@ export class DomManipulator {
   }
 
   #renderUrlList() {
-    const urlList = document.getElementById("display-urls");
+    const urlList = document.querySelector("section#history .urls");
     urlList.innerHTML = "";
 
     this.shortener.aliasToOriginal.forEach((link, alias) => {

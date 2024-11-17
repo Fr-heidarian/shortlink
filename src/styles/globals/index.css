@@ -2,17 +2,19 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-family: "Inter", system-ui;
+  font-family: "Roboto", system-ui;
 }
 
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
+
   min-height: 100vh;
 }
 
@@ -39,6 +41,9 @@ h2 {
 }
 
 p {
+  max-width: 75ch;
+
   margin-block: 1rem;
+
   line-height: 1.5;
 }

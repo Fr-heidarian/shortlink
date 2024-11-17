@@ -1,0 +1,15 @@
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --dark-color: hsla(0, 0%, 0%, 0.3);
+
+  --primary-color: hsl(207, 85%, 20%);
+  --primary-hover-color: hsl(211, 100%, 35%);
+
+  --success-color: hsl(120, 100%, 25%);
+
+  --danger-color: hsl(0, 100%, 50%);
+
+  --border-color: hsl(0, 0%, 87%);
+
+  --footer-background-color: hsl(0, 2%, 17%);
+}
