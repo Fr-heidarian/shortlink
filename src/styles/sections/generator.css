@@ -1,7 +1,6 @@
 section#generator {
   .side-by-side {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 
     .card {
@@ -46,6 +45,14 @@ section#generator {
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  section#generator {
+    .side-by-side {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
