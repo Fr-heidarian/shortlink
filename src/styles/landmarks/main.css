@@ -4,5 +4,5 @@ main {
 
   width: min(60rem, 100% - 4rem);
 
-  margin: auto;
+  margin-inline: auto;
 }
